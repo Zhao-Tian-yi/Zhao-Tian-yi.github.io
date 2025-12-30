@@ -6,7 +6,7 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-title                    : "Terry Zhao"
+title                    : "Tianyi Zhao(赵天一)"
 description              : "Focusing on Multi-modal Learning."
 repository               : "RayeRen/acad-homepage.github.io"
 google_scholar_stats_use_cdn : true
@@ -21,8 +21,8 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 
 # Site Author
 author:
-  name             : "Lorem ipsum"
-  avatar           : "images/ty_zhao.png"
+  name             : "Terry Zhao"
+  avatar           : "images/tyzhao.jpg"
   bio              : "Beihang University"
   location         : "Beijing, China"
   employer         :
