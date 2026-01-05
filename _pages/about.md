@@ -22,9 +22,9 @@ I am a Ph.D. student at Beihang University (BUAA), majoring in Artificial Intell
 
 My research interests include **Multimodal Learning**, **Remote Sensing**, and **MLLM Grounding and Reasoning**. I am interested in developing effective learning frameworks for understanding, grounding, and reasoning over complex multimodal data.
 
-<i style="color: red; display: inline;"><b>Feel free to contact me by email if you are interested in discussing or collaborating with me.</b></i>
+<i style="color: red; display: inline;"><b>I am open to academic collaborations and research discussions, and I am also actively seeking internship and full-time opportunities in related fields. Please feel free to contact me via email for potential collaboration, internship, or professional opportunities.</b></i>
 
-I am open to academic collaborations and research discussions. Please feel free to contact me via email for potential cooperation or professional opportunities.
+
 
 
 
