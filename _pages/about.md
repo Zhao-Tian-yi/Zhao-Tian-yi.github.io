@@ -18,9 +18,7 @@ redirect_from:
 <span class='anchor' id='about-me'></span>
 
 # 👋 About Me
-I am a Ph.D. student at Beihang University (BUAA), majoring in Artificial Intelligence, supervised by Prof. [Xingxing Wei](https://sites.google.com/site/xingxingwei1988/) and [Bo Li](https://iai.buaa.edu.cn/info/1013/1089.htm). 
-
-My research interests include **Multimodal Learning**, **Remote Sensing**, and **MLLM Grounding and Reasoning**. I am interested in developing effective learning frameworks for understanding, grounding, and reasoning over complex multimodal data.
+I am a Ph.D. student at Beihang University (BUAA), majoring in Artificial Intelligence, supervised by Prof. [Xingxing Wei](https://sites.google.com/site/xingxingwei1988/) and [Bo Li](https://iai.buaa.edu.cn/info/1013/1089.htm). My research interests include **Multimodal Learning**, **Remote Sensing**, and **MLLM Grounding and Reasoning**. 
 
 <i style="color: red; display: inline;"><b>I am open to academic collaborations and research discussions, and I am also actively seeking internship and full-time opportunities in related fields. Please feel free to contact me via email for potential collaboration, internship, or professional opportunities.</b></i>
 
