@@ -20,19 +20,24 @@ redirect_from:
 # 👋 About Me
 I am a Ph.D. student at Beihang University (BUAA), majoring in Artificial Intelligence, supervised by Prof. [Xingxing Wei](https://sites.google.com/site/xingxingwei1988/) and [Bo Li](https://iai.buaa.edu.cn/info/1013/1089.htm). My research interests include **Multimodal Learning**, **Remote Sensing**, and **MLLM Grounding and Reasoning**. 
 
-<i style="color: red; display: inline;"><b>I am open to academic collaborations and research discussions, and I am also actively seeking internship and full-time opportunities in related fields. Please feel free to contact me via email for potential collaboration, internship, or professional opportunities.</b></i>
+I am open to academic collaborations and research discussions, and I am also actively seeking internship and full-time opportunities in related fields. 
+<i style="color: red; display: inline;"><b>Please feel free to contact me via email for potential collaboration, internship, or professional opportunities.</b></i>
 
 
 
 
 
 # 🔥 News
-- *2022.02*: &nbsp;🎉🎉 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2022.02*: &nbsp;🎉🎉 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+
+- *2026.01*: &nbsp; My personal website launched.
+- *2025.12*: &nbsp;🎉🎉 One paper is accepted by TITS (RSDet).
+- *2025.07*: &nbsp;🎉🎉 One paper is accepted by 计算机辅助设计与图形学学报 (Journal of Computer-Aided Design and Computer Graphics).
+- *2025.07*: &nbsp;🎉🎉 One paper is accepted by ACMMM 2025 (UniRGB-IR).
+- *2025.06*: &nbsp;🎉🎉 One paper is accepted by ICCV 2025 (M2D-LIF).
 
 # 📝 Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2016</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICCV 2025</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Deep Residual Learning for Image Recognition](https://openaccess.thecvf.com/content_cvpr_2016/papers/He_Deep_Residual_Learning_CVPR_2016_paper.pdf)
@@ -44,7 +49,7 @@ I am a Ph.D. student at Beihang University (BUAA), majoring in Artificial Intell
 </div>
 </div>
 
-- [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet](https://github.com), A, B, C, **CVPR 2020**
+% - [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet](https://github.com), A, B, C, **CVPR 2020**
 
 # 🎖 Honors and Awards
 - *2021.10* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
