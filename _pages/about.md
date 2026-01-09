@@ -20,7 +20,7 @@ redirect_from:
 # 👋 About Me
 I am a Ph.D. student at Beihang University (BUAA), majoring in Artificial Intelligence, supervised by Prof. [Bo Li](https://iai.buaa.edu.cn/info/1013/1089.htm) and [Xingxing Wei](https://sites.google.com/site/xingxingwei1988/). My research interests include **Multimodal Learning**, **Remote Sensing**, and **MLLM Grounding and Reasoning**. 
 
-I am open to academic collaborations and research discussions, and I am also actively seeking internship and full-time opportunities in related fields. 
+I am open to academic collaborations and research discussions, and I am also actively seeking internships and full-time opportunities in related fields. 
 <i style="color: red; display: inline;"><b>Please feel free to contact me via email for potential collaboration, internship, or professional opportunities.</b></i>
 
 
@@ -36,28 +36,55 @@ I am open to academic collaborations and research discussions, and I am also act
 - *2025.06*: &nbsp;🎉🎉 One paper is accepted by ICCV 2025 (M2D-LIF).
 
 # 📝 Publications 
+Topic: Multi-modal Learning
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICCV 2025</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[Deep Residual Learning for Image Recognition](https://openaccess.thecvf.com/content_cvpr_2016/papers/He_Deep_Residual_Learning_CVPR_2016_paper.pdf)
+[Rethinking Multi-modal Object Detection from the Perspective of Mono-Modality Feature LearningPreprint](https://openaccess.thecvf.com/content/ICCV2025/papers/Zhao_Rethinking_Multi-modal_Object_Detection_from_the_Perspective_of_Mono-Modality_Feature_ICCV_2025_paper.pdf)
 
-**Kaiming He**, Xiangyu Zhang, Shaoqing Ren, Jian Sun
+**Tianyi Zhao**, Boyang Liu, Yanglei Gao, Yiming Sun, Maoxun Yuan, Xingxing Wei
 
-[**Project**](https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DhtAFkwAAAAJ&citation_for_view=DhtAFkwAAAAJ:ALROH1vI_8AC) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+[**Project**](https://github.com/Zhao-Tian-yi/M2D-LIF) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
 - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
 </div>
 </div>
 
-% - [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet](https://github.com), A, B, C, **CVPR 2020**
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">TITS 2026</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Removal then selection: A coarse-to-fine fusion perspective for RGB-infrared object detection](https://openaccess.thecvf.com/content_cvpr_2016/papers/He_Deep_Residual_Learning_CVPR_2016_paper.pdf)
+
+**Tianyi Zhao**, Maoxun Yuan, Feng Jiang, Nan Wang, Xingxing Wei
+
+[**Project**](https://github.com/Zhao-Tian-yi/RSDet) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ACM MM 2025</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[UniRGB-IR: A Unified Framework for Visible-Infrared Semantic Tasks via Adapter Tuning](https://dl.acm.org/doi/abs/10.1145/3746027.3754806)
+
+Maoxun Yuan, Bo Cui, **Tianyi Zhao**, Jiayi Wang, Shan Fu, Xue Yang, Xingxing Wei
+
+[**Project**](https://github.com/PoTsui99/UniRGB-IR) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
+- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+</div>
+</div>
+
+
+
+- [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet](https://github.com), A, B, C, **计算机辅助设计与图形学学报 (Journal of Computer-Aided Design and Computer Graphics)**
 
 # 🎖 Honors and Awards
 - *2021.10* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
 - *2021.09* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
 
 # 📖 Educations
-- *2019.06 - 2022.04 (now)*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2015.09 - 2019.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+- *2023.09 - now*, Beihang University. 
+- *2019.09 - 2023.06*, Beihang University.
 
 # 💬 Invited Talks
 - *2021.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
