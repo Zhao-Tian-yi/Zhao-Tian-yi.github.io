@@ -29,6 +29,7 @@ I am open to academic collaborations and research discussions, and I am also act
 
 # 🔥 News
 
+- *2026.03*: &nbsp;🎉🎉 One paper is accepted by CVPR 2026 (NS-FPN).
 - *2026.01*: &nbsp; My personal website launched.
 - *2025.12*: &nbsp;🎉🎉 One paper is accepted by TITS (RSDet).
 - *2025.07*: &nbsp;🎉🎉 One paper is accepted by 计算机辅助设计与图形学学报 (Journal of Computer-Aided Design and Computer Graphics).
