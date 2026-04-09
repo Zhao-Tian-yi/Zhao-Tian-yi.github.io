@@ -1,11 +1,5 @@
 <script>
     $(document).ready(function () {
-        {% if site.google_scholar_stats_use_cdn %}
-        var gsDataBaseUrl = 'https://cdn.jsdelivr.net/gh/{{ site.repository }}@'
-        {% else %}
-        var gsDataBaseUrl = 'https://raw.githubusercontent.com/{{ site.repository }}/'
-        {% endif %}
-
         function normalizeTitle(title) {
             return (title || '')
                 .toLowerCase()
@@ -14,7 +8,7 @@
                 .trim();
         }
 
-        $.getJSON(gsDataBaseUrl + 'google-scholar-stats/gs_data.json', function (data) {
+        function renderCitations(data) {
             var totalCitation = data['citedby']
             var totalCitationElement = document.getElementById('total_cit')
             if (totalCitationElement) {
@@ -51,11 +45,42 @@
                     element.innerHTML = '| Google Scholar Citations: updating';
                 }
             });
-        }).fail(function () {
+        }
+
+        function renderUnavailable() {
             var citationEles = document.getElementsByClassName('show_paper_citations')
             Array.prototype.forEach.call(citationEles, function (element) {
                 element.innerHTML = '| Google Scholar Citations: unavailable';
             });
-        });
+        }
+
+        function fetchScholarStats(urls, index) {
+            if (index >= urls.length) {
+                renderUnavailable();
+                return;
+            }
+
+            $.getJSON(urls[index], function (data) {
+                renderCitations(data);
+            }).fail(function () {
+                fetchScholarStats(urls, index + 1);
+            });
+        }
+
+        var dataUrls = [
+            'https://cdn.jsdelivr.net/gh/{{ site.repository }}@google-scholar-stats/gs_data.json',
+            'https://raw.githubusercontent.com/{{ site.repository }}/google-scholar-stats/gs_data.json',
+            'https://cdn.staticaly.com/gh/{{ site.repository }}/google-scholar-stats/gs_data.json'
+        ];
+
+        {% unless site.google_scholar_stats_use_cdn %}
+        dataUrls = [
+            'https://raw.githubusercontent.com/{{ site.repository }}/google-scholar-stats/gs_data.json',
+            'https://cdn.jsdelivr.net/gh/{{ site.repository }}@google-scholar-stats/gs_data.json',
+            'https://cdn.staticaly.com/gh/{{ site.repository }}/google-scholar-stats/gs_data.json'
+        ];
+        {% endunless %}
+
+        fetchScholarStats(dataUrls, 0);
     })
 </script>

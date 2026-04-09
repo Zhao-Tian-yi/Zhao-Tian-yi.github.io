@@ -20,14 +20,14 @@ redirect_from:
 # 👋 About Me
 I am a Ph.D. student at Beihang University (BUAA), majoring in Artificial Intelligence, supervised by Prof. [Bo Li](https://iai.buaa.edu.cn/info/1013/1089.htm) and [Xingxing Wei](https://sites.google.com/site/xingxingwei1988/). My research interests include **Multimodal Learning**, **Remote Sensing**, and **MLLM Grounding and Reasoning**.
 
-I focus on multi-modal perception and understanding, especially visible-infrared learning, remote sensing, and robust feature representation for real-world vision systems. I am open to academic collaborations and research discussions, and I am also actively seeking internships and full-time opportunities in related fields.
+I focus on multi-modal perception and understanding, especially visible-infrared learning and remote sensing for real-world vision systems. I am open to academic collaborations and research discussions, and I am also actively seeking internships and full-time opportunities in related fields.
 <i style="color: red; display: inline;"><b>Please feel free to contact me via email for potential collaboration, internship, or professional opportunities.</b></i>
 
 # 🔥 News
 
 - *2026.02*: &nbsp;🎉🎉 One paper is accepted by CVPR 2026 (NS-FPN).
 - *2026.01*: &nbsp; My personal website launched.
-- *2025.12*: &nbsp;🎉🎉 One paper is accepted by TITS (RSDet).
+- *2025.12*: &nbsp;🎉🎉 One paper is accepted by IEEE T-ITS (RSDet).
 - *2025.07*: &nbsp;🎉🎉 One paper is accepted by Journal of Computer-Aided Design and Computer Graphics.
 - *2025.07*: &nbsp;🎉🎉 One paper is accepted by ACM MM 2025 (UniRGB-IR).
 - *2025.06*: &nbsp;🎉🎉 One paper is accepted by ICCV 2025 (M2D-LIF).
@@ -45,7 +45,7 @@ Topic: Multi-modal Learning / RGB-Infrared Perception
 <u>**Tianyi Zhao**</u>, Boyang Liu, Yanglei Gao, Yiming Sun, Maoxun Yuan, Xingxing Wei
 
 [**Project**](https://github.com/Zhao-Tian-yi/M2D-LIF) <strong><span class='show_paper_citations' data-title='Rethinking Multi-modal Object Detection from the Perspective of Mono-Modality Feature Learning'></span></strong>
-- We revisit RGB-infrared object detection from the perspective of mono-modality feature learning and show that strong single-modality representation learning is a key prerequisite for robust multimodal performance. Building on this observation, the paper proposes a more effective feature learning and fusion strategy that improves cross-modal complementarity while reducing feature interference, yielding more stable detection accuracy in complex illumination and occlusion scenarios.
+- We revisit RGB-infrared object detection from the perspective of mono-modality feature learning and show that strong single-modality representation is a key prerequisite for robust multimodal performance. Based on this insight, we design a better feature learning and fusion strategy that improves cross-modal complementarity and detection stability under challenging illumination and occlusion.
 </div>
 </div>
 
@@ -57,7 +57,7 @@ Topic: Multi-modal Learning / RGB-Infrared Perception
 <u>**Tianyi Zhao**</u>, Maoxun Yuan, Feng Jiang, Nan Wang, Xingxing Wei
 
 [**Project**](https://github.com/Zhao-Tian-yi/RSDet) <strong><span class='show_paper_citations' data-title='Removal then Selection: A Coarse-to-Fine Fusion Perspective for RGB-Infrared Object Detection'></span></strong>
-- This work formulates RGB-infrared fusion as a coarse-to-fine process of “removal then selection,” where noisy and redundant modality-specific cues are filtered before complementary cross-modal evidence is progressively integrated. The framework improves representation quality under adverse conditions such as low light and cluttered backgrounds, and demonstrates strong gains in both detection robustness and localization precision.
+- This work formulates RGB-infrared fusion as a coarse-to-fine process of “removal then selection,” where noisy or redundant cues are filtered before complementary information is integrated. The framework improves robustness in low-light and cluttered scenes while delivering better localization precision.
 </div>
 </div>
 
@@ -69,7 +69,7 @@ Topic: Multi-modal Learning / RGB-Infrared Perception
 Maoxun Yuan, Bo Cui, <u>**Tianyi Zhao**</u>, Jiayi Wang, Shan Fu, Xue Yang, Xingxing Wei
 
 [**Project**](https://github.com/PoTsui99/UniRGB-IR) <strong><span class='show_paper_citations' data-title='UniRGB-IR: A Unified Framework for Visible-Infrared Semantic Tasks via Adapter Tuning'></span></strong>
-- UniRGB-IR introduces a unified adapter-tuning framework that enables one shared visible-infrared backbone to support multiple semantic tasks with efficient parameter adaptation. By designing task-aware adapters and a consistent multimodal transfer mechanism, the method significantly reduces task-specific retraining cost while maintaining strong performance across heterogeneous visible-infrared understanding benchmarks.
+- UniRGB-IR introduces a unified adapter-tuning framework that lets one shared visible-infrared backbone support multiple semantic tasks efficiently. With task-aware adapters and consistent multimodal transfer, it reduces task-specific retraining cost while preserving strong cross-task performance.
 </div>
 </div>
 
