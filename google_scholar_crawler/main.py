@@ -3,10 +3,29 @@ import json
 from datetime import datetime
 import os
 import sys
+import signal
 
 
 def log(msg):
     print(msg, flush=True)
+
+
+class TimeoutException(Exception):
+    pass
+
+
+def _timeout_handler(signum, frame):
+    raise TimeoutException("Operation timed out")
+
+
+def run_with_timeout(func, seconds, *args, **kwargs):
+    old_handler = signal.signal(signal.SIGALRM, _timeout_handler)
+    signal.alarm(seconds)
+    try:
+        return func(*args, **kwargs)
+    finally:
+        signal.alarm(0)
+        signal.signal(signal.SIGALRM, old_handler)
 
 
 # 主 ID -> 需要合并到这个主 ID 上的所有 Scholar 条目 ID
@@ -24,14 +43,24 @@ def main():
         raise RuntimeError("GOOGLE_SCHOLAR_ID is not set")
 
     log(f"[1/6] Loading author by id: {scholar_id}")
-    author = scholarly.search_author_id(scholar_id)
+    author = run_with_timeout(scholarly.search_author_id, 60, scholar_id)
 
     log("[2/6] Filling basic author info...")
-    scholarly.fill(author, sections=["basics", "indices", "counts"])
+    run_with_timeout(
+        scholarly.fill,
+        90,
+        author,
+        sections=["basics", "indices", "counts"]
+    )
 
     log("[3/6] Filling publications list...")
     try:
-        scholarly.fill(author, sections=["publications"])
+        run_with_timeout(
+            scholarly.fill,
+            120,
+            author,
+            sections=["publications"]
+        )
     except Exception as e:
         log(f"[WARN] Failed to fully load publications list: {e}")
         author.setdefault("publications", [])
@@ -48,7 +77,7 @@ def main():
             log(f"[4/6] Processing publication {i}/{len(publications)}: {title}")
 
             try:
-                scholarly.fill(pub)
+                run_with_timeout(scholarly.fill, 60, pub)
             except Exception as e:
                 log(f"[WARN] Failed to fill publication '{title}': {e}")
 
@@ -71,7 +100,6 @@ def main():
     final_publications = {}
     merged_ids = set()
 
-    # 先处理需要合并的 ID
     for main_id, id_list in MERGE_BY_ID.items():
         existing_ids = [pid for pid in id_list if pid in raw_publications]
         if not existing_ids:
@@ -87,7 +115,6 @@ def main():
         final_publications[main_id] = merged_pub
         merged_ids.update(existing_ids)
 
-    # 其余未参与合并的论文照常保留
     for pub_id, pub in raw_publications.items():
         if pub_id not in merged_ids:
             final_publications[pub_id] = pub
@@ -116,6 +143,9 @@ def main():
 if __name__ == "__main__":
     try:
         main()
+    except TimeoutException as e:
+        print(f"[FATAL] Scholar request timed out: {e}", file=sys.stderr, flush=True)
+        raise
     except Exception as e:
         print(f"[FATAL] {e}", file=sys.stderr, flush=True)
         raise
