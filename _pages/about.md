@@ -33,9 +33,6 @@ I focus on multi-modal perception and understanding, especially visible-infrared
 - *2025.06*: &nbsp;🎉🎉 One paper is accepted by ICCV 2025 (M2D-LIF).
 
 # 📝 Publications
-Topic: Multi-modal Learning / RGB-Infrared Perception
-
-> The citation count of each paper below is loaded dynamically from the `google-scholar-stats` branch generated from Google Scholar.
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICCV 2025</div><img src='images/500x300.png' alt="M2D-LIF placeholder" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -45,7 +42,7 @@ Topic: Multi-modal Learning / RGB-Infrared Perception
 **Tianyi Zhao**, Boyang Liu, Yanglei Gao, Yiming Sun, Maoxun Yuan, Xingxing Wei
 
 [**Project**](https://github.com/Zhao-Tian-yi/M2D-LIF) <strong><span class='show_paper_citations' data='mJlOsyYAAAAJ:9yKSN-GCB0IC'></span></strong>
-- We revisit RGB-infrared object detection from the perspective of mono-modality feature learning and show that strong single-modality representation is a key prerequisite for robust multimodal performance. Based on this insight, we design a better feature learning and fusion strategy that improves cross-modal complementarity and detection stability under challenging illumination and occlusion.
+- This work revisit RGB-infrared object detection from the perspective of mono-modality feature learning and show that strong single-modality representation is a key prerequisite for robust multimodal performance. Based on this insight, we design a better feature learning and fusion strategy that improves cross-modal complementarity and detection stability under challenging illumination and occlusion.
 </div>
 </div>
 
