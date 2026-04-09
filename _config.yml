@@ -7,8 +7,8 @@
 
 # Site Settings
 title                    : "Tianyi Zhao(赵天一)"
-description              : "Focusing on Multi-modal Learning."
-repository               : "Zhao-Tian-yi/Zhao-Tian-yi.github.io"
+description              : "Multi-modal Learning, Perception and Reasoning"
+repository               : "https://github.com/Zhao-Tian-yi/Zhao-Tian-yi.github.io"
 google_scholar_stats_use_cdn : true
 
 # google analytics
@@ -27,7 +27,7 @@ author:
   location         : "Beijing, China"
   employer         :
   pubmed           : 
-  googlescholar    :
+  googlescholar    : "https://scholar.google.com/citations?user=mJlOsyYAAAAJ&hl=zh-CN"
   email            : "ty_zhao@buaa.edu.cn"
   researchgate     :  # e.g., "https://www.researchgate.net/profile/yourprofile"
   uri              :
