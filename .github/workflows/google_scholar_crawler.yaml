@@ -31,11 +31,20 @@ jobs:
           pip install -r requirements.txt
 
       - name: Run Google Scholar crawler
+        timeout-minutes: 6
         env:
           GOOGLE_SCHOLAR_ID: ${{ secrets.GOOGLE_SCHOLAR_ID }}
+          PYTHONUNBUFFERED: "1"
+          # 可选：
+          # USE_FREE_PROXIES: "1"
+          # MAX_PUBLICATIONS: "10"
+          # PROXY_HTTP: ${{ secrets.PROXY_HTTP }}
+          # PROXY_HTTPS: ${{ secrets.PROXY_HTTPS }}
         run: |
           cd google_scholar_crawler
-          python main.py
+          echo "Starting crawler..."
+          timeout 360 python -u main.py
+          echo "Crawler finished."
 
       - name: Publish citation data to google-scholar-stats branch
         run: |
