@@ -74,17 +74,17 @@ Maoxun Yuan, Bo Cui, <u>**Tianyi Zhao**</u>, Jiayi Wang, Shan Fu, Xue Yang, Xing
 </div>
 
 # 🎖 Honors and Awards
-- 2023 Beijing Outstanding Graduate (北京市优秀毕业生).
-- 2023 Beijing Merit Student (北京市三好学生).
-- 2025 National Scholarship (国家奖学金).
-- 2026 Beihang Youth May Fourth Medal (北京航空航天大学青年五四奖章).
+- 2026 Beihang Youth May Fourth Medal, Nomination Award.
+- 2025 National Scholarship.
+- 2023 Beijing Outstanding Graduate.
+- 2023 Beijing Merit Student.
+
+
 
 # 📖 Educations
 - *2023.09 - now*, Ph.D. student in Artificial Intelligence, Beihang University.
 - *2019.09 - 2023.06*, B.Eng., Beihang University.
 
-# 💬 Invited Talks
-- Available upon request.
 
 # 💻 Internships
 - Available upon request.
