@@ -1,19 +1,86 @@
 <script>
     $(document).ready(function () {
-        {% if site.google_scholar_stats_use_cdn %}
-        var gsDataBaseUrl = 'https://cdn.jsdelivr.net/gh/{{ site.repository }}@'
-        {% else %}
-        var gsDataBaseUrl = 'https://raw.githubusercontent.com/{{ site.repository }}/'
-        {% endif %}
-        $.getJSON(gsDataBaseUrl + "google-scholar-stats/gs_data.json", function (data) {
+        function normalizeTitle(title) {
+            return (title || '')
+                .toLowerCase()
+                .replace(/[^a-z0-9]+/g, ' ')
+                .replace(/\s+/g, ' ')
+                .trim();
+        }
+
+        function renderCitations(data) {
             var totalCitation = data['citedby']
-            document.getElementById('total_cit').innerHTML = totalCitation;
+            var totalCitationElement = document.getElementById('total_cit')
+            if (totalCitationElement) {
+                totalCitationElement.innerHTML = totalCitation;
+            }
+
+            var publications = data['publications'] || {}
+            var publicationEntries = Object.values(publications)
+            var publicationTitleMap = {}
+            publicationEntries.forEach(function (publication) {
+                var bib = publication['bib'] || {}
+                var normalizedTitle = normalizeTitle(bib['title'])
+                if (normalizedTitle) {
+                    publicationTitleMap[normalizedTitle] = publication
+                }
+            })
+
             var citationEles = document.getElementsByClassName('show_paper_citations')
-            Array.prototype.forEach.call(citationEles, element => {
+            Array.prototype.forEach.call(citationEles, function (element) {
                 var paperId = element.getAttribute('data')
-                var numCitations = data['publications'][paperId]['num_citations']
-                element.innerHTML = '| Citations: ' + numCitations;
+                var paperTitle = element.getAttribute('data-title')
+                var publication = null
+
+                if (paperId && publications[paperId]) {
+                    publication = publications[paperId]
+                } else if (paperTitle) {
+                    publication = publicationTitleMap[normalizeTitle(paperTitle)]
+                }
+
+                if (publication) {
+                    var numCitations = publication['num_citations'] || 0
+                    element.innerHTML = '| Google Scholar Citations: ' + numCitations;
+                } else {
+                    element.innerHTML = '| Google Scholar Citations: updating';
+                }
             });
-        });
+        }
+
+        function renderUnavailable() {
+            var citationEles = document.getElementsByClassName('show_paper_citations')
+            Array.prototype.forEach.call(citationEles, function (element) {
+                element.innerHTML = '| Google Scholar Citations: unavailable';
+            });
+        }
+
+        function fetchScholarStats(urls, index) {
+            if (index >= urls.length) {
+                renderUnavailable();
+                return;
+            }
+
+            $.getJSON(urls[index], function (data) {
+                renderCitations(data);
+            }).fail(function () {
+                fetchScholarStats(urls, index + 1);
+            });
+        }
+
+        var dataUrls = [
+            'https://cdn.jsdelivr.net/gh/{{ site.repository }}@google-scholar-stats/gs_data.json',
+            'https://raw.githubusercontent.com/{{ site.repository }}/google-scholar-stats/gs_data.json',
+            'https://cdn.staticaly.com/gh/{{ site.repository }}/google-scholar-stats/gs_data.json'
+        ];
+
+        {% unless site.google_scholar_stats_use_cdn %}
+        dataUrls = [
+            'https://raw.githubusercontent.com/{{ site.repository }}/google-scholar-stats/gs_data.json',
+            'https://cdn.jsdelivr.net/gh/{{ site.repository }}@google-scholar-stats/gs_data.json',
+            'https://cdn.staticaly.com/gh/{{ site.repository }}/google-scholar-stats/gs_data.json'
+        ];
+        {% endunless %}
+
+        fetchScholarStats(dataUrls, 0);
     })
 </script>
