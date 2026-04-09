@@ -44,7 +44,7 @@ Topic: Multi-modal Learning / RGB-Infrared Perception
 
 <u>**Tianyi Zhao**</u>, Boyang Liu, Yanglei Gao, Yiming Sun, Maoxun Yuan, Xingxing Wei
 
-[**Project**](https://github.com/Zhao-Tian-yi/M2D-LIF) <strong><span class='show_paper_citations' data-title='Rethinking Multi-modal Object Detection from the Perspective of Mono-Modality Feature Learning'></span></strong>
+[**Project**](https://github.com/Zhao-Tian-yi/M2D-LIF) <strong><span class='show_paper_citations' data='mJlOsyYAAAAJ:9yKSN-GCB0IC'></span></strong>
 - We revisit RGB-infrared object detection from the perspective of mono-modality feature learning and show that strong single-modality representation is a key prerequisite for robust multimodal performance. Based on this insight, we design a better feature learning and fusion strategy that improves cross-modal complementarity and detection stability under challenging illumination and occlusion.
 </div>
 </div>
@@ -56,7 +56,7 @@ Topic: Multi-modal Learning / RGB-Infrared Perception
 
 <u>**Tianyi Zhao**</u>, Maoxun Yuan, Feng Jiang, Nan Wang, Xingxing Wei
 
-[**Project**](https://github.com/Zhao-Tian-yi/RSDet) <strong><span class='show_paper_citations' data-title='Removal then Selection: A Coarse-to-Fine Fusion Perspective for RGB-Infrared Object Detection'></span></strong>
+[**Project**](https://github.com/Zhao-Tian-yi/RSDet) <strong><span class='show_paper_citations' data='mJlOsyYAAAAJ:YsMSGLbcyi4C'></span></strong>
 - This work formulates RGB-infrared fusion as a coarse-to-fine process of “removal then selection,” where noisy or redundant cues are filtered before complementary information is integrated. The framework improves robustness in low-light and cluttered scenes while delivering better localization precision.
 </div>
 </div>
@@ -68,7 +68,7 @@ Topic: Multi-modal Learning / RGB-Infrared Perception
 
 Maoxun Yuan, Bo Cui, <u>**Tianyi Zhao**</u>, Jiayi Wang, Shan Fu, Xue Yang, Xingxing Wei
 
-[**Project**](https://github.com/PoTsui99/UniRGB-IR) <strong><span class='show_paper_citations' data-title='UniRGB-IR: A Unified Framework for Visible-Infrared Semantic Tasks via Adapter Tuning'></span></strong>
+[**Project**](https://github.com/PoTsui99/UniRGB-IR) <strong><span class='show_paper_citations' data='mJlOsyYAAAAJ:2osOgNQ5qMEC'></span></strong>
 - UniRGB-IR introduces a unified adapter-tuning framework that lets one shared visible-infrared backbone support multiple semantic tasks efficiently. With task-aware adapters and consistent multimodal transfer, it reduces task-specific retraining cost while preserving strong cross-task performance.
 </div>
 </div>
