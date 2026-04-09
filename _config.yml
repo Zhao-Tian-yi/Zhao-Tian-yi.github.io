@@ -9,7 +9,7 @@
 title                    : "Tianyi Zhao(赵天一)"
 description              : "Multi-modal Learning, Perception and Reasoning"
 repository               : "Zhao-Tian-yi/Zhao-Tian-yi.github.io"
-google_scholar_stats_use_cdn : true
+google_scholar_stats_use_cdn : false
 
 # google analytics
 google_analytics_id      :  # get google_analytics_id from https://analytics.google.com/analytics/
