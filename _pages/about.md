@@ -18,73 +18,73 @@ redirect_from:
 <span class='anchor' id='about-me'></span>
 
 # 👋 About Me
-I am a Ph.D. student at Beihang University (BUAA), majoring in Artificial Intelligence, supervised by Prof. [Bo Li](https://iai.buaa.edu.cn/info/1013/1089.htm) and [Xingxing Wei](https://sites.google.com/site/xingxingwei1988/). My research interests include **Multimodal Learning**, **Remote Sensing**, and **MLLM Grounding and Reasoning**. 
+I am a Ph.D. student at Beihang University (BUAA), majoring in Artificial Intelligence, supervised by Prof. [Bo Li](https://iai.buaa.edu.cn/info/1013/1089.htm) and [Xingxing Wei](https://sites.google.com/site/xingxingwei1988/). My research interests include **Multimodal Learning**, **Remote Sensing**, and **MLLM Grounding and Reasoning**.
 
-I am open to academic collaborations and research discussions, and I am also actively seeking internships and full-time opportunities in related fields. 
+I focus on multi-modal perception and understanding, especially visible-infrared learning, remote sensing, and robust feature representation for real-world vision systems. I am open to academic collaborations and research discussions, and I am also actively seeking internships and full-time opportunities in related fields.
 <i style="color: red; display: inline;"><b>Please feel free to contact me via email for potential collaboration, internship, or professional opportunities.</b></i>
-
-
-
-
 
 # 🔥 News
 
 - *2026.02*: &nbsp;🎉🎉 One paper is accepted by CVPR 2026 (NS-FPN).
 - *2026.01*: &nbsp; My personal website launched.
 - *2025.12*: &nbsp;🎉🎉 One paper is accepted by TITS (RSDet).
-- *2025.07*: &nbsp;🎉🎉 One paper is accepted by 计算机辅助设计与图形学学报 (Journal of Computer-Aided Design and Computer Graphics).
-- *2025.07*: &nbsp;🎉🎉 One paper is accepted by ACMMM 2025 (UniRGB-IR).
+- *2025.07*: &nbsp;🎉🎉 One paper is accepted by Journal of Computer-Aided Design and Computer Graphics.
+- *2025.07*: &nbsp;🎉🎉 One paper is accepted by ACM MM 2025 (UniRGB-IR).
 - *2025.06*: &nbsp;🎉🎉 One paper is accepted by ICCV 2025 (M2D-LIF).
 
-# 📝 Publications 
-Topic: Multi-modal Learning
+# 📝 Publications
+Topic: Multi-modal Learning / RGB-Infrared Perception
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICCV 2025</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
+> The citation count of each paper below is loaded dynamically from the `google-scholar-stats` branch generated from Google Scholar.
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICCV 2025</div><img src='images/500x300.png' alt="M2D-LIF placeholder" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[Rethinking Multi-modal Object Detection from the Perspective of Mono-Modality Feature LearningPreprint](https://openaccess.thecvf.com/content/ICCV2025/papers/Zhao_Rethinking_Multi-modal_Object_Detection_from_the_Perspective_of_Mono-Modality_Feature_ICCV_2025_paper.pdf)
+[Rethinking Multi-modal Object Detection from the Perspective of Mono-Modality Feature Learning](https://openaccess.thecvf.com/content/ICCV2025/papers/Zhao_Rethinking_Multi-modal_Object_Detection_from_the_Perspective_of_Mono-Modality_Feature_ICCV_2025_paper.pdf)
 
 <u>**Tianyi Zhao**</u>, Boyang Liu, Yanglei Gao, Yiming Sun, Maoxun Yuan, Xingxing Wei
 
-[**Project**](https://github.com/Zhao-Tian-yi/M2D-LIF) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+[**Project**](https://github.com/Zhao-Tian-yi/M2D-LIF) <strong><span class='show_paper_citations' data-title='Rethinking Multi-modal Object Detection from the Perspective of Mono-Modality Feature Learning'></span></strong>
+- We revisit RGB-infrared object detection from the perspective of mono-modality feature learning and show that strong single-modality representation learning is a key prerequisite for robust multimodal performance. Building on this observation, the paper proposes a more effective feature learning and fusion strategy that improves cross-modal complementarity while reducing feature interference, yielding more stable detection accuracy in complex illumination and occlusion scenarios.
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">TITS 2026</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">TITS 2025</div><img src='images/500x300.png' alt="RSDet placeholder" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[Removal then selection: A coarse-to-fine fusion perspective for RGB-infrared object detection](https://ieeexplore.ieee.org/document/11278552)
+[Removal then Selection: A Coarse-to-Fine Fusion Perspective for RGB-Infrared Object Detection](https://ieeexplore.ieee.org/document/11278552)
 
 <u>**Tianyi Zhao**</u>, Maoxun Yuan, Feng Jiang, Nan Wang, Xingxing Wei
 
-[**Project**](https://github.com/Zhao-Tian-yi/RSDet) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+[**Project**](https://github.com/Zhao-Tian-yi/RSDet) <strong><span class='show_paper_citations' data-title='Removal then Selection: A Coarse-to-Fine Fusion Perspective for RGB-Infrared Object Detection'></span></strong>
+- This work formulates RGB-infrared fusion as a coarse-to-fine process of “removal then selection,” where noisy and redundant modality-specific cues are filtered before complementary cross-modal evidence is progressively integrated. The framework improves representation quality under adverse conditions such as low light and cluttered backgrounds, and demonstrates strong gains in both detection robustness and localization precision.
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ACM MM 2025</div><img src='images/500x300.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ACM MM 2025</div><img src='images/500x300.png' alt="UniRGB-IR placeholder" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[UniRGB-IR: A Unified Framework for Visible-Infrared Semantic Tasks via Adapter Tuning](https://dl.acm.org/doi/abs/10.1145/3746027.3754806)
+[UniRGB-IR: A Unified Framework for Visible-Infrared Semantic Tasks via Adapter Tuning](https://dl.acm.org/doi/10.1145/3746027.3754806)
 
 Maoxun Yuan, Bo Cui, <u>**Tianyi Zhao**</u>, Jiayi Wang, Shan Fu, Xue Yang, Xingxing Wei
 
-[**Project**](https://github.com/PoTsui99/UniRGB-IR) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+[**Project**](https://github.com/PoTsui99/UniRGB-IR) <strong><span class='show_paper_citations' data-title='UniRGB-IR: A Unified Framework for Visible-Infrared Semantic Tasks via Adapter Tuning'></span></strong>
+- UniRGB-IR introduces a unified adapter-tuning framework that enables one shared visible-infrared backbone to support multiple semantic tasks with efficient parameter adaptation. By designing task-aware adapters and a consistent multimodal transfer mechanism, the method significantly reduces task-specific retraining cost while maintaining strong performance across heterogeneous visible-infrared understanding benchmarks.
 </div>
 </div>
-
 
 # 🎖 Honors and Awards
-
+- 2023 Beijing Outstanding Graduate (北京市优秀毕业生).
+- 2023 Beijing Merit Student (北京市三好学生).
+- 2025 National Scholarship (国家奖学金).
+- 2026 Beihang Youth May Fourth Medal (北京航空航天大学青年五四奖章).
 
 # 📖 Educations
-- *2023.09 - now*, Beihang University. 
-- *2019.09 - 2023.06*, Beihang University.
+- *2023.09 - now*, Ph.D. student in Artificial Intelligence, Beihang University.
+- *2019.09 - 2023.06*, B.Eng., Beihang University.
 
 # 💬 Invited Talks
-
+- Available upon request.
 
 # 💻 Internships
-
+- Available upon request.
