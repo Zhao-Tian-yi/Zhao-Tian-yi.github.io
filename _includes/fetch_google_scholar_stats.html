@@ -8,38 +8,55 @@
                 .trim();
         }
 
+        function getCitationCount(publication) {
+            if (!publication) {
+                return 0;
+            }
+
+            if (publication['merged_citations'] !== undefined && publication['merged_citations'] !== null) {
+                return publication['merged_citations'];
+            }
+
+            if (publication['num_citations'] !== undefined && publication['num_citations'] !== null) {
+                return publication['num_citations'];
+            }
+
+            return 0;
+        }
+
         function renderCitations(data) {
-            var totalCitation = data['citedby']
-            var totalCitationElement = document.getElementById('total_cit')
+            var totalCitation = data['citedby'] || 0;
+            var totalCitationElement = document.getElementById('total_cit');
             if (totalCitationElement) {
                 totalCitationElement.innerHTML = totalCitation;
             }
 
-            var publications = data['publications'] || {}
-            var publicationEntries = Object.values(publications)
-            var publicationTitleMap = {}
-            publicationEntries.forEach(function (publication) {
-                var bib = publication['bib'] || {}
-                var normalizedTitle = normalizeTitle(bib['title'])
-                if (normalizedTitle) {
-                    publicationTitleMap[normalizedTitle] = publication
-                }
-            })
+            var publications = data['publications'] || {};
+            var publicationEntries = Object.values(publications);
+            var publicationTitleMap = {};
 
-            var citationEles = document.getElementsByClassName('show_paper_citations')
+            publicationEntries.forEach(function (publication) {
+                var bib = publication['bib'] || {};
+                var normalizedTitle = normalizeTitle(bib['title']);
+                if (normalizedTitle) {
+                    publicationTitleMap[normalizedTitle] = publication;
+                }
+            });
+
+            var citationEles = document.getElementsByClassName('show_paper_citations');
             Array.prototype.forEach.call(citationEles, function (element) {
-                var paperId = element.getAttribute('data')
-                var paperTitle = element.getAttribute('data-title')
-                var publication = null
+                var paperId = element.getAttribute('data');
+                var paperTitle = element.getAttribute('data-title');
+                var publication = null;
 
                 if (paperId && publications[paperId]) {
-                    publication = publications[paperId]
+                    publication = publications[paperId];
                 } else if (paperTitle) {
-                    publication = publicationTitleMap[normalizeTitle(paperTitle)]
+                    publication = publicationTitleMap[normalizeTitle(paperTitle)];
                 }
 
                 if (publication) {
-                    var numCitations = publication['num_citations'] || 0
+                    var numCitations = getCitationCount(publication);
                     element.innerHTML = '| Google Scholar Citations: ' + numCitations;
                 } else {
                     element.innerHTML = '| Google Scholar Citations: updating';
@@ -48,7 +65,7 @@
         }
 
         function renderUnavailable() {
-            var citationEles = document.getElementsByClassName('show_paper_citations')
+            var citationEles = document.getElementsByClassName('show_paper_citations');
             Array.prototype.forEach.call(citationEles, function (element) {
                 element.innerHTML = '| Google Scholar Citations: unavailable';
             });
@@ -82,5 +99,5 @@
         {% endunless %}
 
         fetchScholarStats(dataUrls, 0);
-    })
+    });
 </script>
