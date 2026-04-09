@@ -43,24 +43,14 @@ def main():
         raise RuntimeError("GOOGLE_SCHOLAR_ID is not set")
 
     log(f"[1/6] Loading author by id: {scholar_id}")
-    author = run_with_timeout(scholarly.search_author_id, 60, scholar_id)
+    author = scholarly.search_author_id(scholar_id)
 
     log("[2/6] Filling basic author info...")
-    run_with_timeout(
-        scholarly.fill,
-        90,
-        author,
-        sections=["basics", "indices", "counts"]
-    )
+    scholarly.fill(author, sections=["basics", "indices", "counts"])
 
     log("[3/6] Filling publications list...")
     try:
-        run_with_timeout(
-            scholarly.fill,
-            120,
-            author,
-            sections=["publications"]
-        )
+        scholarly.fill(author, sections=["publications"])
     except Exception as e:
         log(f"[WARN] Failed to fully load publications list: {e}")
         author.setdefault("publications", [])
