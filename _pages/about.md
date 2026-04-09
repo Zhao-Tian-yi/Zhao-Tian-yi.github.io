@@ -20,14 +20,14 @@ redirect_from:
 # 👋 About Me
 I am a Ph.D. student at Beihang University (BUAA), majoring in Artificial Intelligence, supervised by Prof. [Bo Li](https://iai.buaa.edu.cn/info/1013/1089.htm) and [Xingxing Wei](https://sites.google.com/site/xingxingwei1988/). My research interests include **Multimodal Learning**, **Remote Sensing**, and **MLLM Grounding and Reasoning**.
 
-I focus on multi-modal perception and understanding, especially visible-infrared learning, remote sensing, and robust feature representation for real-world vision systems. I am open to academic collaborations and research discussions, and I am also actively seeking internships and full-time opportunities in related fields.
+I focus on multi-modal perception and understanding, especially visible-infrared learning and remote sensing for real-world vision systems. I am open to academic collaborations and research discussions, and I am also actively seeking internships and full-time opportunities in related fields.
 <i style="color: red; display: inline;"><b>Please feel free to contact me via email for potential collaboration, internship, or professional opportunities.</b></i>
 
 # 🔥 News
 
 - *2026.02*: &nbsp;🎉🎉 One paper is accepted by CVPR 2026 (NS-FPN).
 - *2026.01*: &nbsp; My personal website launched.
-- *2025.12*: &nbsp;🎉🎉 One paper is accepted by TITS (RSDet).
+- *2025.12*: &nbsp;🎉🎉 One paper is accepted by IEEE T-ITS (RSDet).
 - *2025.07*: &nbsp;🎉🎉 One paper is accepted by Journal of Computer-Aided Design and Computer Graphics.
 - *2025.07*: &nbsp;🎉🎉 One paper is accepted by ACM MM 2025 (UniRGB-IR).
 - *2025.06*: &nbsp;🎉🎉 One paper is accepted by ICCV 2025 (M2D-LIF).
@@ -74,17 +74,17 @@ Maoxun Yuan, Bo Cui, <u>**Tianyi Zhao**</u>, Jiayi Wang, Shan Fu, Xue Yang, Xing
 </div>
 
 # 🎖 Honors and Awards
-- 2023 Beijing Outstanding Graduate (北京市优秀毕业生).
-- 2023 Beijing Merit Student (北京市三好学生).
-- 2025 National Scholarship (国家奖学金).
-- 2026 Beihang Youth May Fourth Medal (北京航空航天大学青年五四奖章).
+- 2026 Beihang Youth May Fourth Medal, Nomination Award.
+- 2025 National Scholarship.
+- 2023 Beijing Outstanding Graduate.
+- 2023 Beijing Merit Student.
+
+
 
 # 📖 Educations
 - *2023.09 - now*, Ph.D. student in Artificial Intelligence, Beihang University.
 - *2019.09 - 2023.06*, B.Eng., Beihang University.
 
-# 💬 Invited Talks
-- Available upon request.
 
 # 💻 Internships
 - Available upon request.
