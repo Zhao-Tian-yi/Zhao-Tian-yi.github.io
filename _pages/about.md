@@ -79,8 +79,8 @@ Maoxun Yuan, Bo Cui, **Tianyi Zhao**, Jiayi Wang, Shan Fu, Xue Yang, Xingxing We
 
 
 # 📖 Educations
-- *2023.09 - now*, Ph.D. student in Artificial Intelligence, Beihang University.
-- *2019.09 - 2023.06*, B.Eng., Beihang University.
+- *2023.09 - now*, Ph.D. student in Artificial Intelligence, Institute of Artificial Intelligence, Beihang University.
+- *2019.09 - 2023.06*, B.Eng., Institute of Artificial Intelligence, Beihang University.
 
 
 # 💻 Internships
