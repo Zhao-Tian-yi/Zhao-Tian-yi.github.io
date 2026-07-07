@@ -29,6 +29,9 @@ My work focuses on multimodal perception and understanding for real-world vision
       [06/2026] :&nbsp; 🎉🎉 One paper was accepted to ECCV 2026 (<a href="https://arxiv.org/abs/2512.24561">RGBT-GroundBench</a>).
 </li>
 <li>
+      [05/2026] :&nbsp; 🚀🚀 <a href="https://ieeexplore.ieee.org/document/11278552">RSDet</a> becomes <b><font color="red">Popular Article</font></b> of T-ITS.
+</li>
+<li>
       [02/2026] :&nbsp; 🎉🎉 One paper was accepted to CVPR 2026 (<a href="https://arxiv.org/abs/2508.06878">NS-FPN</a>).
 </li>
 <li>
