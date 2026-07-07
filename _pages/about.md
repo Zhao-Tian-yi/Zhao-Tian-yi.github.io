@@ -1,4 +1,4 @@
----
+﻿---
 permalink: /
 title: ""
 excerpt: ""
@@ -18,68 +18,99 @@ redirect_from:
 <span class='anchor' id='about-me'></span>
 
 # 👋 About Me
-I am a Ph.D. student in Artificial Intelligence at Beihang University (BUAA), advised by Prof. [Bo Li](https://iai.buaa.edu.cn/info/1013/1089.htm) and Prof. [Xingxing Wei](https://sites.google.com/site/xingxingwei1988/). My research interests include **multimodal learning**, **visible-infrared perception**, **remote sensing**, and **MLLM grounding and reasoning**.
+I am a Ph.D. student in Artificial Intelligence at Beihang University (BUAA), advised by Prof. [Bo Li](https://iai.buaa.edu.cn/info/1013/1089.htm) and Prof. [Xingxing Wei](https://sites.google.com/site/xingxingwei1988/). My research interests include **multimodal learning**, **perception**, **understanding**, and **reasoning**.
 
 My work focuses on multimodal perception and understanding for real-world vision systems, especially RGB-infrared learning, cross-spectral fusion, and robust visual grounding under challenging environments. I am open to academic collaborations, research discussions, internships, and full-time opportunities in related areas.
 <i style="color: red; display: inline;"><b>Please feel free to contact me by email for potential collaboration, internship, or professional opportunities.</b></i>
 
 # 🔥 News
 
-- *2026.06*: &nbsp;🎉🎉 One paper was accepted to ECCV 2026 (RGBT-GroundBench).
-- *2026.02*: &nbsp;🎉🎉 One paper was accepted to CVPR 2026 (NS-FPN).
-- *2026.01*: &nbsp; My personal website went live.
-- *2025.12*: &nbsp;🎉🎉 One paper was accepted to IEEE T-ITS (RSDet).
-- *2025.07*: &nbsp;🎉🎉 One paper was accepted to Journal of Computer-Aided Design and Computer Graphics.
-- *2025.07*: &nbsp;🎉🎉 One paper was accepted to ACM MM 2025 (UniRGB-IR).
-- *2025.06*: &nbsp;🎉🎉 One paper was accepted to ICCV 2025 (M2D-LIF).
+<li>
+      [06/2026] :&nbsp; 🎉🎉 One paper was accepted to ECCV 2026 (<a href="https://arxiv.org/abs/2512.24561">RGBT-GroundBench</a>).
+</li>
+<li>
+      [02/2026] :&nbsp; 🎉🎉 One paper was accepted to CVPR 2026 (<a href="https://arxiv.org/abs/2508.06878">NS-FPN</a>).
+</li>
+<li>
+      [01/2026] :&nbsp; My personal website went live.
+</li>
+<li>
+      [12/2025] :&nbsp; 🎉🎉 One paper was accepted to IEEE T-ITS (<a href="https://ieeexplore.ieee.org/document/11278552">RSDet</a>).
+</li>
+<li>
+      [07/2025] :&nbsp; 🎉🎉 One paper was accepted to Journal of Computer-Aided Design and Computer Graphics.
+</li>
+<li>
+      [07/2025] :&nbsp; 🎉🎉 One paper was accepted to ACM MM 2025 (<a href="https://dl.acm.org/doi/10.1145/3746027.3754806">UniRGB-IR</a>).
+</li>
+<li>
+      [06/2025] :&nbsp; 🎉🎉 One paper was accepted to ICCV 2025 (<a href="https://openaccess.thecvf.com/content/ICCV2025/papers/Zhao_Rethinking_Multi-modal_Object_Detection_from_the_Perspective_of_Mono-Modality_Feature_ICCV_2025_paper.pdf">M2D-LIF</a>).
+</li>
 
 # 📝 Publications
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ECCV 2026</div><img src='images/500x300.png' alt="RGBT-GroundBench placeholder" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ECCV 2026</div><img src='images/RGBT-VGNet.png' alt="RGBT-GroundBench" width="80%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [RGBT-GroundBench: Visual Grounding Beyond RGB in Complex Real-World Scenarios](https://arxiv.org/abs/2512.24561)
 
-**Tianyi Zhao**, Jiawen Xi, Linhui Xiao, Junnan Li, Xue Yang, Maoxun Yuan, Xingxing Wei
+**<u>Tianyi Zhao</u>**, Jiawen Xi, Linhui Xiao, Junnan Li, Xue Yang, Maoxun Yuan, Xingxing Wei.
 
-[**Paper**](https://arxiv.org/abs/2512.24561) / [**Code**](https://github.com/crazyxiaoxi/RGBTVG) / [**Dataset**](https://huggingface.co/datasets/JiawenXi/RGBT-Ground-Dataset) / [**Models**](https://huggingface.co/JiawenXi/RGBT-Ground-Model)
-- We present RGBT-GroundBench, the first large-scale benchmark for RGB-Thermal visual grounding in complex real-world scenarios. It provides over 40K images, 21,535 RGB-TIR pairs, and 38,760 object instances with referring expressions, bounding boxes, and fine-grained annotations for scenes, environmental conditions, and object properties. We also introduce a unified evaluation protocol for RGB-only, TIR-only, and RGB+TIR inputs, benchmark 11 representative grounding models, and provide RGBT-VGNet as a reproducible baseline for reliable cross-spectral grounding.
+_European Conference on Computer Vision (**ECCV**), 2026_
+
+📃[**Paper**](https://arxiv.org/abs/2512.24561)     💾[**Code**](https://github.com/crazyxiaoxi/RGBTVG) ![img](https://img.shields.io/github/stars/crazyxiaoxi/RGBTVG?style=social) <strong><span class='show_paper_citations' data-title='RGBT-GroundBench: Visual Grounding Beyond RGB in Complex Real-World Scenarios'></span></strong>
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICCV 2025</div><img src='images/500x300.png' alt="M2D-LIF placeholder" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2026</div><img src='images/NS-FPN5.png' alt="NS-FPN" width="80%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Seeing Through the Noise: Improving Infrared Small Target Detection and Segmentation from Noise Suppression Perspective](https://arxiv.org/abs/2508.06878)
+
+Maoxun Yuan, Duanni Meng, Ziteng Xi, **<u>Tianyi Zhao</u>**, Shiji Zhao, Yimian Dai, Xingxing Wei.
+
+_IEEE/CVF Conference on Computer Vision and Pattern Recognition (**CVPR**), 2026_
+
+📃[**Paper**](https://arxiv.org/abs/2508.06878)     💾[**Code**](https://github.com/mengduann/NS-FPN) ![img](https://img.shields.io/github/stars/mengduann/NS-FPN?style=social) <strong><span class='show_paper_citations' data-title='Seeing Through the Noise: Improving Infrared Small Target Detection and Segmentation from Noise Suppression Perspective'></span></strong>
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICCV 2025</div><img src='images/M2D-LIF.png' alt="M2D-LIF" width="80%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Rethinking Multi-modal Object Detection from the Perspective of Mono-Modality Feature Learning](https://openaccess.thecvf.com/content/ICCV2025/papers/Zhao_Rethinking_Multi-modal_Object_Detection_from_the_Perspective_of_Mono-Modality_Feature_ICCV_2025_paper.pdf)
 
-**Tianyi Zhao**, Boyang Liu, Yanglei Gao, Yiming Sun, Maoxun Yuan, Xingxing Wei
+**<u>Tianyi Zhao</u>**, Boyang Liu, Yanglei Gao, Yiming Sun, Maoxun Yuan, Xingxing Wei.
 
-[**Project**](https://github.com/Zhao-Tian-yi/M2D-LIF) <strong><span class='show_paper_citations' data='mJlOsyYAAAAJ:9yKSN-GCB0IC'></span></strong>
-- This work revisits RGB-infrared object detection from the perspective of mono-modality feature learning and shows that strong single-modality representation is a key prerequisite for robust multimodal performance. Based on this insight, we design an improved feature learning and fusion strategy that enhances cross-modal complementarity and detection stability under challenging illumination and occlusion.
+_IEEE/CVF International Conference on Computer Vision (**ICCV**), 2025_
+
+📃[**Paper**](https://openaccess.thecvf.com/content/ICCV2025/papers/Zhao_Rethinking_Multi-modal_Object_Detection_from_the_Perspective_of_Mono-Modality_Feature_ICCV_2025_paper.pdf)     💾[**Code**](https://github.com/Zhao-Tian-yi/M2D-LIF) ![img](https://img.shields.io/github/stars/Zhao-Tian-yi/M2D-LIF?style=social) <strong><span class='show_paper_citations' data='mJlOsyYAAAAJ:9yKSN-GCB0IC' data-title='Rethinking Multi-modal Object Detection from the Perspective of Mono-Modality Feature Learning'></span></strong>
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">TITS 2025</div><img src='images/500x300.png' alt="RSDet placeholder" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">TITS 2025</div><img src='images/RSDet.png' alt="RSDet" width="80%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Removal then Selection: A Coarse-to-Fine Fusion Perspective for RGB-Infrared Object Detection](https://ieeexplore.ieee.org/document/11278552)
 
-**Tianyi Zhao**, Maoxun Yuan, Feng Jiang, Nan Wang, Xingxing Wei
+**<u>Tianyi Zhao</u>**, Maoxun Yuan, Feng Jiang, Nan Wang, Xingxing Wei.
 
-[**Project**](https://github.com/Zhao-Tian-yi/RSDet) <strong><span class='show_paper_citations' data='mJlOsyYAAAAJ:YsMSGLbcyi4C'></span></strong>
-- This work formulates RGB-infrared fusion as a coarse-to-fine process of "removal then selection," where noisy or redundant cues are filtered before complementary information is integrated. The framework improves robustness in low-light and cluttered scenes while delivering more precise localization.
+_IEEE Transactions on Intelligent Transportation Systems (**T-ITS**), 2025_
+
+📃[**Paper**](https://ieeexplore.ieee.org/document/11278552)     💾[**Code**](https://github.com/Zhao-Tian-yi/RSDet) ![img](https://img.shields.io/github/stars/Zhao-Tian-yi/RSDet?style=social) <strong><span class='show_paper_citations' data='mJlOsyYAAAAJ:YsMSGLbcyi4C' data-title='Removal then Selection: A Coarse-to-Fine Fusion Perspective for RGB-Infrared Object Detection'></span></strong>
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ACM MM 2025</div><img src='images/500x300.png' alt="UniRGB-IR placeholder" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ACM MM 2025</div><img src='images/UniRGB-IR.jpg' alt="UniRGB-IR" width="80%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [UniRGB-IR: A Unified Framework for Visible-Infrared Semantic Tasks via Adapter Tuning](https://dl.acm.org/doi/10.1145/3746027.3754806)
 
-Maoxun Yuan, Bo Cui, **Tianyi Zhao**, Jiayi Wang, Shan Fu, Xue Yang, Xingxing Wei
+Maoxun Yuan, Bo Cui, **<u>Tianyi Zhao</u>**, Jiayi Wang, Shan Fu, Xue Yang, Xingxing Wei.
 
-[**Project**](https://github.com/PoTsui99/UniRGB-IR) <strong><span class='show_paper_citations' data='mJlOsyYAAAAJ:2osOgNQ5qMEC'></span></strong>
-- UniRGB-IR introduces a unified adapter-tuning framework that lets one shared visible-infrared backbone support multiple semantic tasks efficiently. With task-aware adapters and consistent multimodal transfer, it reduces task-specific retraining cost while preserving strong cross-task performance.
+_ACM International Conference on Multimedia (**ACM MM**), 2025_
+
+📃[**Paper**](https://dl.acm.org/doi/10.1145/3746027.3754806)     💾[**Code**](https://github.com/PoTsui99/UniRGB-IR) ![img](https://img.shields.io/github/stars/PoTsui99/UniRGB-IR?style=social) <strong><span class='show_paper_citations' data='mJlOsyYAAAAJ:2osOgNQ5qMEC' data-title='UniRGB-IR: A Unified Framework for Visible-Infrared Semantic Tasks via Adapter Tuning'></span></strong>
 </div>
 </div>
 
