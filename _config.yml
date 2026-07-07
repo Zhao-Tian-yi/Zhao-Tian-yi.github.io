@@ -6,8 +6,8 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-title                    : "Tianyi Zhao(赵天一)"
-description              : "Multi-modal Learning, Perception and Reasoning"
+title                    : "Tianyi Zhao (赵天一)"
+description              : "Multimodal Learning, Perception, Grounding, and Reasoning"
 repository               : "Zhao-Tian-yi/Zhao-Tian-yi.github.io"
 google_scholar_stats_use_cdn : false
 
