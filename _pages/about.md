@@ -26,28 +26,28 @@ My work focuses on multimodal perception and understanding for real-world vision
 # 🔥 News
 
 <li>
-      [06/2026] :&nbsp; 🎉🎉 One paper was accepted to ECCV 2026 (<a href="https://arxiv.org/abs/2512.24561">RGBT-GroundBench</a>).
+      [06/2026] :&nbsp; 🎉🎉 One paper was accepted to ECCV 2026 (<b>CCF B</b>, <a href="https://arxiv.org/abs/2512.24561">RGBT-GroundBench</a>).
 </li>
 <li>
-      [05/2026] :&nbsp; 🚀🚀 <a href="https://ieeexplore.ieee.org/document/11278552">RSDet</a> becomes <b><font color="red">Popular Article</font></b> of T-ITS.
+      [05/2026] :&nbsp; 🚀🚀 <a href="https://ieeexplore.ieee.org/document/11278552">RSDet</a> becomes <b><font color="red">Popular Article</font></b> of T-ITS (<b>CCF B, SCI Q1 Top</b>).
 </li>
 <li>
-      [02/2026] :&nbsp; 🎉🎉 One paper was accepted to CVPR 2026 (<a href="https://arxiv.org/abs/2508.06878">NS-FPN</a>).
+      [02/2026] :&nbsp; 🎉🎉 One paper was accepted to CVPR 2026 (<b>CCF A</b>, <a href="https://arxiv.org/abs/2508.06878">NS-FPN</a>).
 </li>
 <li>
       [01/2026] :&nbsp; My personal website went live.
 </li>
 <li>
-      [12/2025] :&nbsp; 🎉🎉 One paper was accepted to IEEE T-ITS (<a href="https://ieeexplore.ieee.org/document/11278552">RSDet</a>).
+      [12/2025] :&nbsp; 🎉🎉 One paper was accepted to IEEE T-ITS (<b>CCF B, SCI Q1 Top</b>, <a href="https://ieeexplore.ieee.org/document/11278552">RSDet</a>).
 </li>
 <li>
-      [07/2025] :&nbsp; 🎉🎉 One paper was accepted to Journal of Computer-Aided Design and Computer Graphics.
+      [07/2025] :&nbsp; 🎉🎉 One paper was accepted to Journal of Computer-Aided Design and Computer Graphics (<b>CCF A</b>).
 </li>
 <li>
-      [07/2025] :&nbsp; 🎉🎉 One paper was accepted to ACM MM 2025 (<a href="https://dl.acm.org/doi/10.1145/3746027.3754806">UniRGB-IR</a>).
+      [07/2025] :&nbsp; 🎉🎉 One paper was accepted to ACM MM 2025 (<b>CCF A</b>, <a href="https://dl.acm.org/doi/10.1145/3746027.3754806">UniRGB-IR</a>).
 </li>
 <li>
-      [06/2025] :&nbsp; 🎉🎉 One paper was accepted to ICCV 2025 (<a href="https://openaccess.thecvf.com/content/ICCV2025/papers/Zhao_Rethinking_Multi-modal_Object_Detection_from_the_Perspective_of_Mono-Modality_Feature_ICCV_2025_paper.pdf">M2D-LIF</a>).
+      [06/2025] :&nbsp; 🎉🎉 One paper was accepted to ICCV 2025 (<b>CCF A</b>, <a href="https://openaccess.thecvf.com/content/ICCV2025/papers/Zhao_Rethinking_Multi-modal_Object_Detection_from_the_Perspective_of_Mono-Modality_Feature_ICCV_2025_paper.pdf">M2D-LIF</a>).
 </li>
 
 # 📝 Publications
