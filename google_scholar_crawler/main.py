@@ -1,6 +1,6 @@
 from scholarly import scholarly, ProxyGenerator
 import json
-from datetime import datetime
+from datetime import datetime, timezone
 import os
 import sys
 import signal
@@ -177,7 +177,8 @@ def build_fallback_from_cache(cached_data, scholar_id):
         raise RuntimeError("No cache available for fallback.")
 
     fallback = deepcopy(cached_data)
-    fallback["updated"] = str(datetime.now())
+    fallback["last_attempt"] = datetime.now(timezone.utc).isoformat()
+    fallback["fetch_status"] = "cached"
     fallback.setdefault("scholar_id", scholar_id)
     log("[fallback] Using cached data as fallback.")
     return fallback
@@ -222,9 +223,6 @@ def main():
         log(f"[WARN] Failed to fill author basics: {e}")
         if cached_data:
             fallback = build_fallback_from_cache(cached_data, scholar_id)
-            # 尝试用当前已有 author 的总引用覆盖缓存
-            fallback["citedby"] = author.get("citedby", fallback.get("citedby", 0))
-            fallback["updated"] = str(datetime.now())
             save_json(fallback)
             log("[6/6] Done with partial fallback.")
             return
@@ -243,13 +241,15 @@ def main():
         )
     except Exception as e:
         log(f"[WARN] Failed to fully load publications list: {e}")
-        author.setdefault("publications", [])
+        raise RuntimeError("Could not fetch the complete publication list; preserving published data") from e
 
     publications = author.get("publications", []) or []
     if MAX_PUBLICATIONS > 0:
         publications = publications[:MAX_PUBLICATIONS]
         log(f"[3/6] Truncated publications to first {MAX_PUBLICATIONS} items")
 
+    if not publications:
+        raise RuntimeError("Scholar returned no publications; preserving published data")
     log(f"[4/6] Found {len(publications)} publications")
 
     # -------------------------
@@ -263,12 +263,18 @@ def main():
             pub_id = pub.get("author_pub_id")
             log(f"[4/6] Processing publication {i}/{len(publications)}: {title}")
 
-            try:
-                run_with_timeout(scholarly.fill, FILL_SINGLE_PAPER_TIMEOUT, pub)
-            except Exception as e:
-                log(f"[WARN] Failed to fill publication '{title}': {e}")
-                if not CONTINUE_ON_PAPER_ERROR:
-                    raise
+            # The author publication list already contains title, ID and count.
+            # Only request a detail page when the count is absent.
+            if "num_citations" not in pub:
+                try:
+                    run_with_timeout(scholarly.fill, FILL_SINGLE_PAPER_TIMEOUT, pub)
+                except Exception as e:
+                    log(f"[WARN] Failed to fill publication '{title}': {e}")
+                    if not CONTINUE_ON_PAPER_ERROR:
+                        raise
+            pub_id = pub.get("author_pub_id")
+            if "num_citations" not in pub:
+                raise RuntimeError(f"Publication '{title}' has no citation count")
 
             if not pub_id:
                 log(f"[WARN] Publication '{title}' has no author_pub_id, skipped.")
@@ -287,12 +293,8 @@ def main():
         except Exception as e:
             log(f"[WARN] Unexpected publication parse error at item {i}: {e}")
 
-    # 如果单篇抓取结果太少，尝试用缓存补齐非关键字段
-    if cached_data and isinstance(cached_data.get("publications"), dict):
-        cached_pubs = cached_data.get("publications", {})
-        for pub_id, cached_pub in cached_pubs.items():
-            if pub_id not in raw_publications:
-                raw_publications[pub_id] = cached_pub
+    if len(raw_publications) != len(publications):
+        raise RuntimeError("Incomplete citation counts; preserving published data")
 
     final_publications = merge_publications_by_id(raw_publications)
 
@@ -300,7 +302,9 @@ def main():
     # Step 5: write output
     # -------------------------
     log("[5/6] Writing JSON files...")
-    author["updated"] = str(datetime.now())
+    author["updated"] = datetime.now(timezone.utc).isoformat()
+    author["last_attempt"] = author["updated"]
+    author["fetch_status"] = "fresh"
     author["scholar_id"] = scholar_id
     author["publications"] = final_publications
 

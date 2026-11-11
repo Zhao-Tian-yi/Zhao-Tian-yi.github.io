@@ -11,6 +11,10 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: google-scholar-citations
+  cancel-in-progress: false
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -18,6 +22,17 @@ jobs:
     steps:
       - name: Checkout main branch
         uses: actions/checkout@v4
+
+      - name: Restore last published citation data
+        uses: actions/checkout@v4
+        with:
+          ref: google-scholar-stats
+          path: citation-cache
+
+      - name: Stage citation cache
+        run: |
+          mkdir -p google_scholar_crawler/results
+          cp citation-cache/gs_data*.json google_scholar_crawler/results/
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -29,6 +44,8 @@ jobs:
           python -m pip install --upgrade pip
           cd google_scholar_crawler
           pip install -r requirements.txt
+          pip check
+          python -c "from scholarly import scholarly; from bibtexparser.bibdatabase import BibDatabase"
 
       - name: Run Google Scholar crawler
         timeout-minutes: 6
@@ -60,3 +77,13 @@ jobs:
           git branch -M google-scholar-stats
           git remote add origin "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${GITHUB_REPOSITORY}.git"
           git push -f origin google-scholar-stats
+
+      - name: Verify a fresh fetch succeeded
+        run: |
+          python - <<'PYTHON'
+          import json
+          data = json.load(open("google_scholar_crawler/results/gs_data.json"))
+          if data.get("fetch_status") != "fresh":
+              raise SystemExit("Scholar fetch failed; last known citation data was preserved, not refreshed.")
+          print("Fresh citation data:", data["updated"], "publications:", len(data["publications"]))
+          PYTHON
