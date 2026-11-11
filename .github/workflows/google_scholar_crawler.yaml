@@ -1,12 +1,8 @@
 name: Get Citation Data
 
+# Citation updates are manual only; no scheduled or push-triggered runs.
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - main
-  schedule:
-    - cron: "0 8 * * *"
 
 permissions:
   contents: write
