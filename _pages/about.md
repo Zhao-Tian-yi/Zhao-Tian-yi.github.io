@@ -124,7 +124,7 @@ _ACM International Conference on Multimedia (**ACM MM**), 2025_
 **Reviewer**
 
 - **Journals:** IEEE Transactions on Multimedia (TMM); Pattern Recognition (PR).
-- **Conferences and review venues:** ICLR, AAAI, IJCAI, ICCV, ACL Rolling Review (ARR), ICME, and ICASSP.
+- **Conferences and review venues:** ICLR, AAAI, IJCAI, CVPR, ECCV, ACL Rolling Review (ARR), ICME, and ICASSP.
 
 # 🎖 Honors and Awards
 - 2026 Beihang Youth May Fourth Medal, Nomination Award.
