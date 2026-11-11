@@ -136,7 +136,7 @@ _ACM International Conference on Multimedia (**ACM MM**), 2025_
 
 # 📖 Education
 - *2023.09 - Present*, Ph.D. student in Artificial Intelligence, Institute of Artificial Intelligence, Beihang University.
-- *2019.09 - 2023.06*, B.Eng., Institute of Artificial Intelligence, Beihang University.
+- *2019.09 - 2023.06*, B.Eng. in Artificial Intelligence, Institute of Artificial Intelligence, Beihang University.
 
 
 # 💻 Internship
