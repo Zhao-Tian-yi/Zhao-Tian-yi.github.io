@@ -26,6 +26,9 @@ My work focuses on multimodal perception and understanding for real-world vision
 # 🔥 News
 
 <li>
+      [11/2026] :&nbsp; 🎉🎉 <a href="https://ieeexplore.ieee.org/document/11278552">RSDet</a> is recognized as an <b><span style="color: red;">ESI Highly Cited Paper</span></b> and an <b><span style="color: red;">ESI Hot Paper</span></b>.
+</li>
+<li>
       [06/2026] :&nbsp; 🎉🎉 One paper was accepted to ECCV 2026 (<b>CCF B</b>, <a href="https://arxiv.org/abs/2512.24561">RGBT-GroundBench</a>).
 </li>
 <li>
@@ -99,6 +102,8 @@ _IEEE/CVF International Conference on Computer Vision (**ICCV**), 2025_
 **<u>Tianyi Zhao</u>**, Maoxun Yuan, Feng Jiang, Nan Wang, Xingxing Wei.
 
 _IEEE Transactions on Intelligent Transportation Systems (**T-ITS**), 2025_
+
+<a href="https://webofscience.clarivate.cn/wos/woscc/full-record/WOS:001632075500001"><strong><span style="color: #c62828;">🏆 ESI Highly Cited Paper · 🔥 ESI Hot Paper</span></strong></a>
 
 📃[**Paper**](https://ieeexplore.ieee.org/document/11278552)     💾[**Code**](https://github.com/Zhao-Tian-yi/RSDet) ![img](https://img.shields.io/github/stars/Zhao-Tian-yi/RSDet?style=social) <strong><span class='show_paper_citations' data='mJlOsyYAAAAJ:YsMSGLbcyi4C' data-title='Removal then Selection: A Coarse-to-Fine Fusion Perspective for RGB-Infrared Object Detection'></span></strong>
 </div>
