@@ -142,15 +142,3 @@ _ACM International Conference on Multimedia (**ACM MM**), 2025_
 # 📖 Education
 - *2023.09 - Present*, Ph.D. student in Artificial Intelligence, Institute of Artificial Intelligence, Beihang University.
 - *2019.09 - 2023.06*, B.Eng. in Artificial Intelligence, Institute of Artificial Intelligence, Beihang University.
-
-
-<span class='anchor' id='visitors'></span>
-
-# 🌍 Visitors
-
-<div style="max-width: 520px; margin: 1.5em auto; text-align: center;">
-  <a href="https://info.flagcounter.com/BmDf" target="_blank" rel="noopener noreferrer">
-    <img src="https://s05.flagcounter.com/map/BmDf/size_m/txt_494E52/border_FFFFFF/pageviews_1/viewers_0/flags_0/" alt="World map of visitor countries and total pageviews" style="display: block; max-width: 100%; height: auto; margin: 0 auto;" />
-  </a>
-  <p style="margin-top: 0.75em; font-size: 0.8em; color: #767676;">Visitor countries and pageviews since November 18, 2026.<br />Click the map for detailed statistics. Powered by Flag Counter.</p>
-</div>
